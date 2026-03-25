@@ -1,0 +1,41 @@
+# -----------------
+# Node / React
+# -----------------
+node_modules/
+package-lock.json
+dist/
+build/
+
+# -----------------
+# Environment files
+# -----------------
+.env
+.env.*
+!.env.example
+
+# -----------------
+# Python (ML API)
+# -----------------
+venv/
+__pycache__/
+*.pyc
+ml_api/model/
+*.safetensors
+
+# -----------------
+# IDE / Editor
+# -----------------
+.vscode/
+.idea/
+
+# -----------------
+# OS files
+# -----------------
+.DS_Store
+Thumbs.db
+
+# -----------------
+# Logs
+# -----------------
+*.log
+logs/

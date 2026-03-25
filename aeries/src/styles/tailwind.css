@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors - Warm & Empathetic */
+    --color-background: linear-gradient(135deg, #b6703f 0%, #4d6295 100%); /* soft cream to pale blue */
+    --color-foreground: #2C3E50; /* warm dark blue-gray */
+    --color-border: #E8D5D3; /* soft rose border */
+    --color-input: #FFF5F2; /* warm cream input */
+    --color-ring: #E67E50; /* warm terracotta focus ring */
+    
+    /* Card Colors - Clean & Warm */
+    --color-card: #FFFFFF; /* pure white */
+    --color-card-foreground: #34495E; /* soft slate */
+    --color-popover: #FFFFFF; /* pure white */
+    --color-popover-foreground: #2C3E50; /* warm dark */
+    
+    /* Muted Colors - Soft & Calming */
+    --color-muted: #F7F3F0; /* soft beige */
+    --color-muted-foreground: #7F8C8D; /* muted gray */
+    
+    /* Primary Colors - Warm Terracotta */
+    --color-primary: #D87355; /* warm terracotta */
+    --color-primary-foreground: #FFFFFF; /* white */
+    
+    /* Secondary Colors - Sage Green */
+    --color-secondary: #95A5A6; /* soft sage */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Destructive Colors - Soft Coral */
+    --color-destructive: #E74C3C; /* soft coral red */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Accent Colors - Golden Peach */
+    --color-accent: #F39C12; /* golden peach */
+    --color-accent-foreground: #FFFFFF; /* white */
+    
+    /* Success Colors - Sage Green */
+    --color-success: #27AE60; /* calming sage green */
+    --color-success-foreground: #FFFFFF; /* white */
+    
+    /* Warning Colors - Warm Amber */
+    --color-warning: #F39C12; /* warm amber */
+    --color-warning-foreground: #FFFFFF; /* white */
+    
+    /* Error Colors - Gentle Rose */
+    --color-error: #E74C3C; /* gentle rose */
+    --color-error-foreground: #FFFFFF; /* white */
+
+    /* Special Mental Health Colors */
+    --color-calm: #B8E6B8; /* gentle mint */
+    --color-hope: #FFE5B4; /* warm peach */
+    --color-comfort: #E6E6FA; /* soft lavender */
+    --color-strength: #DDA0DD; /* gentle plum */
+    --color-peace: #F0F8FF; /* alice blue */
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #FFF8F3 0%, #F8FAFF 100%);
+    @apply text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    min-height: 100vh;
+  }
+
+  /* Smooth transitions for all interactive elements */
+  * {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer utilities {
+  /* Empathetic Animations */
+  .breathing-animation {
+    animation: breathe 6s ease-in-out infinite;
+  }
+  
+  @keyframes breathe {
+    0%, 100% { 
+      transform: scale(0.98); 
+      opacity: 0.9;
+    }
+    50% { 
+      transform: scale(1.02); 
+      opacity: 1;
+    }
+  }
+  
+  .gentle-pulse {
+    animation: gentlePulse 3s ease-in-out infinite;
+  }
+  
+  @keyframes gentlePulse {
+    0%, 100% { 
+      opacity: 0.6;
+      transform: scale(1);
+    }
+    50% { 
+      opacity: 1;
+      transform: scale(1.02);
+    }
+  }
+
+  .calm-float {
+    animation: calmFloat 8s ease-in-out infinite;
+  }
+  
+  @keyframes calmFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .warm-glow {
+    animation: warmGlow 4s ease-in-out infinite alternate;
+  }
+  
+  @keyframes warmGlow {
+    0% { box-shadow: 0 0 20px rgba(216, 115, 85, 0.2); }
+    100% { box-shadow: 0 0 40px rgba(216, 115, 85, 0.4); }
+  }
+  
+  /* Micro-interactions */
+  .micro-feedback {
+    transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .micro-feedback:hover {
+    opacity: 1;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(216, 115, 85, 0.2);
+  }
+  
+  .micro-feedback:active {
+    transform: translateY(-1px) scale(1.01);
+  }
+
+  /* Enhanced Shadows for Depth */
+  .therapeutic-shadow {
+    box-shadow: 0 4px 20px rgba(216, 115, 85, 0.08), 
+                0 2px 10px rgba(0, 0, 0, 0.04);
+  }
+
+  .empathetic-shadow {
+    box-shadow: 0 8px 30px rgba(216, 115, 85, 0.12), 
+                0 4px 15px rgba(0, 0, 0, 0.06);
+  }
+
+  .comfort-shadow {
+    box-shadow: 0 2px 15px rgba(149, 165, 166, 0.1), 
+                0 1px 6px rgba(0, 0, 0, 0.03);
+  }
+  
+  /* Beautiful Borders */
+  .console-border {
+    border: 2px solid var(--color-border);
+    border-radius: 16px;
+    background: linear-gradient(145deg, #FFFFFF 0%, #FFF8F5 100%);
+  }
+
+  .warm-border {
+    border: 1px solid #E8D5D3;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+  }
+
+  /* Gradient Backgrounds */
+  .warm-gradient {
+    background: linear-gradient(135deg, #FFE5B4 0%, #E6E6FA 100%);
+  }
+
+  .calm-gradient {
+    background: linear-gradient(135deg, #B8E6B8 0%, #F0F8FF 100%);
+  }
+
+  .comfort-gradient {
+    background: linear-gradient(135deg, #FFF8F3 0%, #F8FAFF 100%);
+  }
+
+  .hope-gradient {
+    background: linear-gradient(135deg, #FFE5B4 0%, #FFCCCB 100%);
+  }
+
+  /* Text Gradients for Headings */
+  .empathetic-text {
+    background: linear-gradient(135deg, #D87355 0%, #95A5A6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Focus States */
+  .focus-warm:focus {
+    outline: none;
+    ring: 3px;
+    ring-color: rgba(216, 115, 85, 0.3);
+    border-color: #D87355;
+  }
+
+  /* Card Enhancements */
+  .empathy-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(216, 115, 85, 0.1);
+    border-radius: 20px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .empathy-card:hover {
+    background: rgba(255, 255, 255, 0.95);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(216, 115, 85, 0.15);
+    border-color: rgba(216, 115, 85, 0.2);
+  }
+
+  /* Mental Health Color Classes */
+  .text-calm { color: var(--color-calm); }
+  .bg-calm { background-color: var(--color-calm); }
+  .text-hope { color: var(--color-hope); }
+  .bg-hope { background-color: var(--color-hope); }
+  .text-comfort { color: var(--color-comfort); }
+  .bg-comfort { background-color: var(--color-comfort); }
+  .text-strength { color: var(--color-strength); }
+  .bg-strength { background-color: var(--color-strength); }
+  .text-peace { color: var(--color-peace); }
+  .bg-peace { background-color: var(--color-peace); }
+
+  /* Scroll Enhancements */
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+
+  /* Loading States */
+  .gentle-loading {
+    animation: gentleLoading 2s ease-in-out infinite;
+  }
+
+  @keyframes gentleLoading {
+    0%, 100% { 
+      opacity: 0.4;
+      transform: scale(0.98);
+    }
+    50% { 
+      opacity: 0.8;
+      transform: scale(1.02);
+    }
+  }
+
+  /* Accessibility Enhancements */
+  @media (prefers-reduced-motion: reduce) {
+    .breathing-animation,
+    .gentle-pulse,
+    .calm-float,
+    .warm-glow,
+    .micro-feedback,
+    .gentle-loading {
+      animation: none;
+    }
+    
+    * {
+      transition: none !important;
+    }
+  }
+}
