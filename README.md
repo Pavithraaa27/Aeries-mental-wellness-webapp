@@ -1,63 +1,60 @@
-🧠 AERIES: Emotion-Aware AI Mental Wellness Platform
-Conversational and Therapeutic Support System
+🧠 Aeries: Emotion-Aware AI Mental Wellness Platform
 
+A full-stack AI-powered mental wellness platform with emotion detection and empathetic conversational support.
+Built using React, FastAPI, and Transformer-based NLP models.
 
-Mental health challenges like stress, anxiety, and emotional imbalance are increasing, while access to timely support remains limited. Aeries addresses this gap by combining:
-
-🤖 Emotion-aware chatbot
-🧠 AI-driven emotion detection
-💬 Empathetic response generation
-🧘 Self-care and wellness modules
-
-The platform leverages Natural Language Processing (NLP) and Transformer-based models to understand user emotions and respond accordingly.
+This project integrates emotion-aware chatbot interactions with therapeutic self-care modules like journaling, relaxation content, and guided breathing exercises.
 
 🚀 Features
-💬 Conversational AI
-Emotion-aware chatbot
-Contextual and empathetic responses
-Real-time interaction
-🎯 Emotion Detection
-Transformer-based model (BERT)
-Detects emotions like:
-Happy 😊
-Sad 😔
-Stressed 😣
-Anxious 😟
-📝 Digital Journaling
-Record thoughts and emotions
-Track emotional patterns over time
-🎥 Relaxation Module
-Mindfulness and stress-relief videos
-🎧 Audio Therapy
-Guided breathing exercises
-Relaxation audio support
-🏗️ System Architecture
-
-The system follows a client-server architecture:
-
-User inputs message via frontend (React)
-Backend (FastAPI) processes request
-Emotion detection model analyzes input
-Generative AI creates response
-Response sent back to user interface
-🛠️ Tech Stack
+🤖 Emotion-aware conversational chatbot
+🎯 Transformer-based emotion detection (BERT)
+💬 Contextual and empathetic AI responses
+📝 Digital journaling for emotional tracking
+🎥 Relaxation and mindfulness videos
+🎧 Guided breathing and audio therapy
+⚡ Real-time interaction with fast response
+🔗 Seamless frontend–backend integration
+🧠 AI-driven mental wellness support system
+🛠 Tech Stack
 Frontend
 React.js
-HTML, CSS, JavaScript
+HTML5
+CSS3
+JavaScript
 Backend
 FastAPI
-Uvicorn (ASGI server)
-AI/ML
+Uvicorn
+AI / Machine Learning
 PyTorch
 Hugging Face Transformers
 BERT (Emotion Detection)
-Generative Language Model (API-based)
-Other Tools
+Generative AI (LLM API)
+Tools & Utilities
 REST APIs
 CORS Middleware
-Environment Variables for security
+Environment Variables
+📁 Project Structure
+aeries/
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── backend/
+│   ├── main.py
+│   ├── routes/
+│   ├── models/
+│   └── requirements.txt
+│
+├── ai-model/
+│   ├── emotion_model/
+│   ├── tokenizer.json
+│   └── config files
+│
+└── README.md
 ⚙️ Installation & Setup
-1️⃣ Clone the repository
+1️⃣ Clone the Repository
 git clone https://github.com/your-username/aeries.git
 cd aeries
 2️⃣ Backend Setup
@@ -71,29 +68,28 @@ npm start
 📊 Results
 🎯 Emotion Detection Accuracy: 86.5%
 ⚡ Average Response Time: 2.3 seconds
-👥 User Satisfaction: ~80% found responses empathetic
+👥 80% users found responses empathetic and helpful
 🔐 Security
-API keys stored using environment variables
-CORS enabled for secure communication
-User data handled with confidentiality
+🔑 API keys stored using environment variables
+🔒 Secure frontend–backend communication via CORS
+🛡 User data handled with privacy considerations
 📈 Future Enhancements
-🎙️ Voice-based emotion detection
+🎙 Voice-based emotion detection
 🧠 Multi-label emotion classification
 ☁️ Cloud deployment for scalability
-💾 Chat memory for personalized experience
+💾 Chat memory for personalization
 📚 Fine-tuned domain-specific models
 ⚠️ Disclaimer
 
-Aeries is not a substitute for professional mental health care. It is designed to provide supportive assistance and should be used alongside professional guidance when needed.
+This platform is not a substitute for professional mental health care. It is designed to provide supportive assistance only.
 
 👩‍💻 Authors
 Esha Gupta
 Pavithra Nair
 Sonali Gautam
 
-Information Science and Engineering
 Jain (Deemed-to-be) University, Bengaluru
 
 📄 License
 
-This project is for academic and research purposes.
+This project is intended for academic and research purposes.
