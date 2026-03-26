@@ -31,7 +31,8 @@ This project integrates **emotion-aware chatbot interactions** with **therapeuti
 
 ## Backend
 - FastAPI  
-- Uvicorn  
+- Uvicorn
+    
 
 ## AI / Machine Learning
 - PyTorch  
