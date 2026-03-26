@@ -1,8 +1,6 @@
-🧠 Aeries: Emotion-Aware AI Mental Wellness Platform
+🧠 AERIES: Emotion-Aware AI Mental Wellness Platform
+Conversational and Therapeutic Support System
 
-Aeries is an AI-powered mental wellness platform designed to provide emotion-aware conversational support along with integrated therapeutic tools such as journaling, relaxation content, and guided breathing exercises.
-
-📌 Overview
 
 Mental health challenges like stress, anxiety, and emotional imbalance are increasing, while access to timely support remains limited. Aeries addresses this gap by combining:
 
