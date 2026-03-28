@@ -4,7 +4,6 @@ A full-stack AI-powered mental wellness platform with emotion detection and empa
 Built using **React, FastAPI, and Transformer-based NLP models**.
 
 This project integrates **emotion-aware chatbot interactions** with **therapeutic self-care modules** like journaling, relaxation content, and guided breathing exercises.
-
 ---
 
 
