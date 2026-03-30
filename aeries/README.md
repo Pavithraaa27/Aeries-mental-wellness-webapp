@@ -38,7 +38,7 @@ A modern React-based project utilizing the latest frontend technologies and tool
 ## 📁 Project Structure
 
 ```
-react_app/
+Aeries/Aeries
 ├── public/             # Static assets
 ├── src/
 │   ├── components/     # Reusable UI components
