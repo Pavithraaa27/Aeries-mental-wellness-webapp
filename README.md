@@ -6,7 +6,6 @@ Built using **React, FastAPI, and Transformer-based NLP models**.
 This project integrates **emotion-aware chatbot interactions** with **therapeutic self-care modules** like journaling, relaxation content, and guided breathing exercises.
 ---
 
-
 # 🚀 Features
 
 - 🤖 Emotion-aware conversational chatbot  
