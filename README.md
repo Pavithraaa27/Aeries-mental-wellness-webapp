@@ -1,5 +1,6 @@
 # 🧠 Aeries: Emotion-Aware AI Mental Wellness Platform
 
+
 A full-stack AI-powered mental wellness platform with emotion detection and empathetic conversational support.  
 Built using **React, FastAPI, and Transformer-based NLP models**.
 
