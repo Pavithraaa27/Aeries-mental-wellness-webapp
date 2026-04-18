@@ -19,6 +19,7 @@ This project integrates **emotion-aware chatbot interactions** with **therapeuti
 - 🔗 Seamless frontend–backend integration  
 - 🧠 AI-driven mental wellness support system  
 
+
 ---
 
 # 🛠 Tech Stack
