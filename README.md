@@ -18,7 +18,6 @@ This project integrates **emotion-aware chatbot interactions** with **therapeuti
 - 🔗 Seamless frontend–backend integration  
 - 🧠 AI-driven mental wellness support system  
 
----
 
 # 🛠 Tech Stack
 
@@ -44,7 +43,6 @@ This project integrates **emotion-aware chatbot interactions** with **therapeuti
 - CORS Middleware  
 - Environment Variables  
 
----
 
 # 📁 Project Structure
 
@@ -70,7 +68,6 @@ aeries/
 └── README.md
 
 
----
 
 # ⚙️ Installation & Setup
 
