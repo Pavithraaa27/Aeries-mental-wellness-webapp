@@ -7,7 +7,6 @@ This project integrates **emotion-aware chatbot interactions** with **therapeuti
 
 ---
 
-
 # 🚀 Features
 
 - 🤖 Emotion-aware conversational chatbot  
